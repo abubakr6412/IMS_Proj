@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.ManageWorkersUI">
+   <children>
+      <BorderPane layoutX="146.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="58.0" prefWidth="763.0" style="-fx-background-color: #032d4d;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="220.0" layoutY="-53.0" prefHeight="20.0" prefWidth="763.0" style="-fx-background-color: #032d4d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <HBox layoutX="464.0" layoutY="20.0" prefHeight="31.0" prefWidth="283.0" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="14.399999999999977" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#switchToHome" prefHeight="50.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" styleClass="sliderbutton" stylesheets="@application.css" text="HOME" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/dash.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onMouseClicked="#logout" prefHeight="52.0" prefWidth="126.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" styleClass="sliderbutton" stylesheets="@application.css" text="LOGOUT" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="14.0" layoutY="34.0" onMouseClicked="#switchTomenu" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/back2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <Pane prefHeight="26.0" prefWidth="762.0" style="-fx-background-color: #032d4d;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <Pane prefHeight="416.0" prefWidth="762.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="296.0" layoutY="232.0" mnemonicParsing="false" onMouseClicked="#switchToSuppList" prefHeight="22.0" prefWidth="170.0" style="-fx-background-color: #032d4d; -fx-background-radius: 100; -fx-text-fill: white;" text="Suppliers" />
+                  <Button fx:id="all" layoutX="506.0" layoutY="232.0" mnemonicParsing="false" onMouseClicked="#switchToEmplist" prefHeight="21.0" prefWidth="169.0" style="-fx-background-color: #032d4d; -fx-background-radius: 100; -fx-text-fill: white;" text="Employees" />
+                  <ImageView fitHeight="107.0" fitWidth="105.0" layoutX="326.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/delivery_man_parcel%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="534.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/1067538.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="109.0" fitWidth="114.0" layoutX="104.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/thrive.Approver.icon_201019.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="74.0" layoutY="232.0" mnemonicParsing="false" onMouseClicked="#switchToAccountapproval" prefHeight="19.0" prefWidth="170.0" style="-fx-background-color: #032d4d; -fx-background-radius: 100; -fx-text-fill: white;" text="Account Approval" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

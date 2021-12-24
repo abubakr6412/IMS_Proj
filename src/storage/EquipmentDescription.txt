@@ -1,0 +1,8 @@
+3810,Sofa,IKEA
+3302,Monitor,DELL
+1213,PC,DELL
+1214,Computer,DELL
+1215,Laptop,DELL
+1216,Laptop,HP
+1217,PC,DELL
+1218,Computer,HP

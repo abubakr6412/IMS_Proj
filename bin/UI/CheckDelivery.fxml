@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.CheckDelivery">
+   <children>
+      <BorderPane layoutX="146.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="58.0" prefWidth="763.0" style="-fx-background-color: #032d4d;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="220.0" layoutY="-53.0" prefHeight="20.0" prefWidth="763.0" style="-fx-background-color: #032d4d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="Exit" fitHeight="25.0" fitWidth="21.0" layoutX="729.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/exit.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <HBox layoutX="449.0" layoutY="20.0" prefHeight="31.0" prefWidth="286.0" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="26.200000000000045" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#switchToHome" prefHeight="50.0" prefWidth="148.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" styleClass="sliderbutton" stylesheets="@application.css" text="HOME" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/dash.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onMouseClicked="#logout" prefHeight="52.0" prefWidth="126.0" style="-fx-background-color: transparent; -fx-font-weight: bold;" styleClass="sliderbutton" stylesheets="@application.css" text="LOGOUT" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="30.0" fitWidth="26.0" layoutX="14.0" layoutY="34.0" onMouseClicked="#switchTomenu" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/back2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <Pane prefHeight="26.0" prefWidth="762.0" style="-fx-background-color: #032d4d;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <Pane prefHeight="416.0" prefWidth="762.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableView" layoutX="29.0" layoutY="58.0" prefHeight="244.0" prefWidth="718.0" style="-fx-background-color: transparent;" stylesheets="@table.css">
+                    <columns>
+                      <TableColumn fx:id="RequisitionID" prefWidth="134.4000301361084" text="Requisition ID" />
+                      <TableColumn fx:id="EquipmentID" prefWidth="145.5999755859375" text="Equipment ID" />
+                        <TableColumn fx:id="SuppID" prefWidth="154.39996337890625" text="Supplier ID" />
+                        <TableColumn fx:id="Status" prefWidth="119.19998168945312" text="Status" />
+                        <TableColumn fx:id="IssueDate" prefWidth="152.00006103515625" text="Issue Date" />
+                    </columns>
+                  </TableView>
+                  <Text layoutX="275.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Check Delivery" wrappingWidth="226.93679809570312">
+                     <font>
+                        <Font name="Times New Roman" size="32.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="mylabel" layoutX="285.0" layoutY="392.0" prefHeight="17.0" prefWidth="268.0" textFill="#032d4d" />
+                  <TextField fx:id="reqID" layoutX="150.0" layoutY="316.0" />
+                  <Text layoutX="35.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment ID" wrappingWidth="97.33670806884766">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="35.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="82.13668823242188">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="equip" layoutX="150.0" layoutY="354.0" />
+                  <Text layoutX="356.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="82.13668823242188">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="condition" layoutX="464.0" layoutY="353.0" />
+                  <Text layoutX="356.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company" wrappingWidth="82.13668823242188">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="description" layoutX="464.0" layoutY="388.0" />
+                  <Text layoutX="356.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="82.13668823242188">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="price" layoutX="150.0" layoutY="388.0" />
+                  <Button layoutX="628.0" layoutY="388.0" mnemonicParsing="false" onAction="#Update" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #032d4d; -fx-text-fill: white;" text="Update" />
+                  <TextField fx:id="company" layoutX="464.0" layoutY="315.0" />
+                  <Text layoutX="35.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requisition ID" wrappingWidth="108.53671836853027">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

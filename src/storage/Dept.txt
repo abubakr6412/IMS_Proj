@@ -1,0 +1,4 @@
+1391,Medicine,Block A,46
+1392,Computer Science,Block C,52
+1411,Engineering,Block B,41
+1412,BBA,Block FSM,42

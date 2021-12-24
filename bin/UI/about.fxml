@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="530.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.about">
+   <children>
+      <ImageView fitHeight="615.0" fitWidth="854.0" layoutX="-51.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/2483854.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#345979a8" height="542.0" layoutX="-11.0" layoutY="-8.0" stroke="BLACK" strokeType="INSIDE" width="814.0" />
+      <Text fill="WHITE" layoutX="122.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Inventory Management System" textAlignment="CENTER" wrappingWidth="590.9368133544922">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We have been building softwares since 1991.It takes alot of efforts to server our clients with what exactly they require.We have been serving the clients and building our trust. We usually make management systems and a group pf people work together to provide you with the finest software. Work with us Today." textAlignment="JUSTIFY" wrappingWidth="320.5366668701172">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="259.0" fitWidth="356.0" layoutX="376.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/business-people-office-organization-businessman-260nw-1668691375.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="19.0" layoutY="21.0" onMouseClicked="#switchToMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/back2.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.contact">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="534.0" layoutX="-9.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="771.0" />
+      <ImageView fitHeight="389.0" fitWidth="761.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/590300.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="394.0" layoutX="-5.0" layoutY="39.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.5;" width="771.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.37878786524136865">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.15228070318698883" green="0.3821754455566406" blue="0.6631578803062439" opacity="0.8399999737739563" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.18740399385560666">
+                     <color>
+                        <Color red="0.15228070318698883" green="0.3821754455566406" blue="0.6631578803062439" opacity="0.8399999737739563" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.969278033794163">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="272.0" layoutX="36.0" layoutY="221.0" stroke="WHITE" strokeType="INSIDE" width="335.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="272.0" layoutX="389.0" layoutY="221.0" stroke="WHITE" strokeType="INSIDE" width="335.0" />
+      <Text fill="WHITE" layoutX="286.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Get In Touch" wrappingWidth="206.13668823242188">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="45.0" fitWidth="51.0" layoutX="182.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/87-873786_telephone-phone-call-icon-symbol-vector-font-awesome.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="86.0" layoutX="539.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/244-2444890_chat-bubble-messages-free-messages-icon-png.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="155.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Talk to Mangement" wrappingWidth="117.33673858642578">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interested in mangement inventory software. Just pick up the phone and chat with one of our team member." wrappingWidth="309.54486083984375" />
+      <Text fill="#62b4d9" layoutX="149.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="+92 301-5146328" wrappingWidth="128.53675079345714">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#3384a6" layoutX="149.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View Team Memebrs" textAlignment="CENTER" wrappingWidth="128.53675079345714" />
+      <Text layoutX="528.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Suppport" wrappingWidth="128.53675079345714">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="429.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sometimes you need a little help from your friends. Don't worry we are here to help you!" wrappingWidth="282.9366149902344" />
+      <Button layoutX="476.0" layoutY="397.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="174.0" style="-fx-background-color: #e1803a;" text="Contact Support" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="14.0" layoutY="4.0" onMouseClicked="#switchToMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/340.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
